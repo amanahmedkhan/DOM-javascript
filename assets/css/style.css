@@ -1,0 +1,120 @@
+/* Base Stuff Start */
+	body{
+		margin:50px;
+		padding:0;
+		font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size:14px;
+	}
+	ul{margin:0; padding:0;}
+/* Base Stuff End */
+
+/* Slider Start */
+	.main-slider{
+		width:635px;
+		position:relative;
+		overflow:hidden;
+		-webkit-box-shadow:0 0 7px 0 #dad9de;
+		-moz-box-shadow:0 0 7px 0 #dad9de;
+		-ms-box-shadow:0 0 7px 0 #dad9de;
+		-o-box-shadow:0 0 7px 0 #dad9de;
+		box-shadow:0 0 7px 0 #dad9de;
+	}
+	#slider{
+		position:relative;
+		overflow:hidden;
+		display:flex;
+	}
+	#slider li{
+		position: relative;
+		display:flex;
+	}
+	
+	/*Slider Navigation*/
+		.main-slider #slide-thumbs{
+			position:absolute;
+			left:0;
+			bottom:0;
+			background:rgba(0,0,0,0.7);
+			border-top:1px solid #4e4b5e;
+			width:100%;
+			padding:7px 4px;
+		}
+		.main-slider #slide-thumbs li{
+			display:inline-block;
+			width:84px;
+			height:69px;
+			cursor:pointer;
+			float:left;
+			padding-right:6.5px;
+		}
+		.main-slider #slide-thumbs li img{
+			width:100%;
+			height:100%;
+		}
+		.main-slider #slide-thumbs li:last-child{
+			padding-right:0;
+		}
+		
+		.nvgt{
+			position:absolute;
+			top:186px;
+			height:50px;
+			width:30px;
+			opacity:0.6;
+		}
+		.nvgt:hover{
+			opacity:0.9;
+		}
+	/*Slider Navigation*/
+
+	/*Slider Arrows*/
+		#prev{
+			background:#000 url('../images/prev.png') no-repeat center;
+			left:0px;
+			cursor:pointer;
+		}
+		#next{
+			background:#000 url('../images/next.png') no-repeat center;
+			right:0px;
+			cursor:pointer;
+		}
+	/*Slider Arrows*/
+/* Slider ENd */
+
+/* From Start */
+	.form{width:250px;}
+
+	form{
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+	}
+
+	input{
+		height:30px;
+		font-size:12px;
+		padding:0 8px;
+		border:1px solid #cacaca;
+		color:#b5b5b3;
+		margin-bottom:15px;
+	}
+
+	textarea{
+		border:1px solid #cacaca;
+		font-size:12px;
+		padding:8px; 
+		color:#b5b5b3;
+		margin-bottom:13px;
+	}
+
+	#error{
+		font-size:12px;
+		color:red;
+		display:block;
+		text-align:center;
+		text-transform:capitalize;
+		margin-bottom:3px;
+	}
+/* From End */
+
+
